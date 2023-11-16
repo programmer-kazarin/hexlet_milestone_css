@@ -3,6 +3,10 @@
     src: url("../fonts/poppins/Poppins-Regular.ttf");
   }
 
+body {
+    min-width: 1440px;
+}
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -32,4 +36,70 @@
     display: block;
     font-size: 30px;
     color: #686565;    
+}
+
+.welcome-container, .about-me-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcome-left, .about-me-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-left-greetings {
+    color: #2000E7;
+    font-size: 30px;
+}
+
+.left-text {
+    font-size: 24px;
+    list-style: 36px;
+}
+
+.container-header {
+    color: #2000E7;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.welcome-left-hi span {
+    color: #F2BD00;
+    font-size: 48px;
+}
+
+.welcome-left-buttons, .hire-me-left-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.welcome-right {
+    width: 564px;
+    height: 564px;
+}
+
+.button {
+    box-shadow: 11px 21px 15px 6px #00000040;
+    width: 246px;
+    height: 72px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.hire-me-button {
+    background-color: #2000E7;
+}
+
+.my-project-button {
+    color: #2000E7;
+    background: linear-gradient(#2000E7 4%);
+    border: 2px solid #2000E7;
+}
+
+.image-about-me {
+    width: 925px;
+    height: 925px;
 }
