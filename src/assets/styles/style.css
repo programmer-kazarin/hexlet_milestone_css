@@ -3,10 +3,6 @@
     src: url("../fonts/poppins/Poppins-Regular.ttf");
   }
 
-body {
-    min-width: 1440px;
-}
-
 .header {
     display: flex;
     justify-content: space-around;
@@ -38,12 +34,28 @@ body {
     color: #686565;    
 }
 
-.welcome-container, .about-me-container {
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 5792px;
+    min-width: 1440px;
+}
+
+.welcome-container, .about-me-container, .my-projects-container {
     display: flex;
     justify-content: space-around;
 }
 
-.welcome-left, .about-me-left {
+.about-me-container, .my-projects-container {
+    height: 910px;
+}
+
+.my-projects-container {
+    align-items: center;    
+}
+
+.welcome-left, .about-me-left, .my-projects-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +66,7 @@ body {
     font-size: 30px;
 }
 
-.left-text {
+.simple-text {
     font-size: 24px;
     list-style: 36px;
 }
@@ -102,4 +114,27 @@ body {
 .image-about-me {
     width: 925px;
     height: 925px;
+}
+ 
+.my-projects-gallery {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;    
+}
+
+.my-projects-gallery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    
+}
+
+.my-projects-gallery-item {
+    flex-shrink: 3;
+    width: 246px;
+    height: 180px;
+    border-radius: 2%;
 }
