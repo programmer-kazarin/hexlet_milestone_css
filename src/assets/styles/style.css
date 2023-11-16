@@ -7,8 +7,8 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-
     font-family: "Poppins Regular", sans-serif;
+    width: 1440px;
 }
 
 .uni-design {
@@ -19,7 +19,7 @@
 
 .navigation {
     display: flex;
-    flex-grow: 1;
+    flex-grow: 1;    
 }
 
 .navigation ul {
@@ -38,24 +38,36 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: center;
     height: 5792px;
-    min-width: 1440px;
+    width: 1440px;
 }
 
-.welcome-container, .about-me-container, .my-projects-container {
+.welcome-container {
     display: flex;
     justify-content: space-around;
 }
 
-.about-me-container, .my-projects-container {
+.about-me-container {
+    display: flex;
+    justify-content: space-around;
     height: 910px;
 }
 
 .my-projects-container {
-    align-items: center;    
+    display: flex;
+    flex-direction: column;
+    height: 910px;    
+    justify-content: center;  
 }
 
-.welcome-left, .about-me-left, .my-projects-container {
+.contact-me-container {
+    display: flex;
+    flex-direction: column;
+    height: 1316px;    
+}
+
+.welcome-left, .about-me-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,4 +149,36 @@
     width: 246px;
     height: 180px;
     border-radius: 2%;
+}
+
+.contact-me-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contact-me-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-me-form input {
+    width: 653px;
+    height: 94px;
+}
+
+.contact-me-form input:last-of-type {
+    height: 265px;
+}
+
+.contact-me-form button {
+    width: 327px;
+    height: 94px;
+}
+
+.contact-me-image {
+    width: 958px;
+    height: 958px;    
 }
