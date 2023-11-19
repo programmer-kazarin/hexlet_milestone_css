@@ -3,14 +3,44 @@
     src: url("../fonts/poppins/Poppins-Regular.ttf");
   }
 
-.header {
+@font-face {
+font-family: "Jost";
+src: url("../fonts/jost/static/Jost-Regular.ttf");
+}
+
+@font-face {
+font-family: "Jost-Bold";
+src: url("../fonts/jost/static/Jost-Bold.ttf");
+}
+
+.root-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 1440px;
+    height: 5792px; 
+}
+
+.header-container {
     display: flex;
     justify-content: space-around;
     width: 100%;
     font-family: "Poppins Regular", sans-serif;
-    width: 1440px;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    height: 809px;
+}
+
+/* HEADER CONTENT */
 .uni-design {
     font-size: 48px;
     flex-grow: 1;
@@ -34,15 +64,7 @@
     color: #686565;    
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    height: 5792px;
-    width: 1440px;
-}
-
+/* MAIN CONTENT */
 .welcome-container {
     display: flex;
     justify-content: space-around;
@@ -181,4 +203,93 @@
 .contact-me-image {
     width: 958px;
     height: 958px;    
+}
+
+/* FOOTER CONTENT */
+.footer-top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email-column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email-header-item {
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 48px;
+    line-height: 72px;
+    color: #0E0578;
+}
+
+.email-input-container {
+    display: flex;
+    flex-direction: row;
+    height: 97px;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.email-input-item {
+    font-family: "Jost", sans-serif;
+    font-size: 31px;
+    line-height: 44.8px;
+    color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.email-footer {
+    background-color: #000000;
+}
+
+.subscribe-button {
+    background-color: #F965FC;
+    margin-left: -50px;    
+}
+
+.column-header-item {
+    font-family: "Jost-Bold", sans-serif;
+    font-size: 31px;
+    line-height: 44.8px;
+}
+
+.column-link-item {
+    font-family: "Jost", sans-serif;
+    font-size: 31px;
+    line-height: 44.8px;
+}
+
+hr {
+    border: 3px solid #000000;
+    margin: 5em 5em;
+
+}
+
+.footer-bottom-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.copyright-item {
+    font-family: "Jost", sans-serif;
+    font-size: 32px;
+    line-height: 46.24px;
+    flex-basis: 50%;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+    flex-basis: 50%;
+}
+
+.icon-item {
+    margin-left: 50px;
+    align-self: center;
 }
