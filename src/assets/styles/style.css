@@ -13,49 +13,63 @@ font-family: "Jost-Bold";
 src: url("../fonts/jost/static/Jost-Bold.ttf");
 }
 
-.root-container {
+body {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    width: 1440px;
-    height: 5792px; 
+    justify-content: space-between;
+    min-width: 1440px;;
+    /*width: 1440px;*/
+    height: 5792px;
+    margin: 0;
 }
 
-.header-container {
+.super-container {
     display: flex;
-    justify-content: space-around;
     width: 100%;
+    border-style: groove;
+}
+
+.header-container {    
+    justify-content: space-around;    
     font-family: "Poppins Regular", sans-serif;
+    align-items: center;
+    flex-grow: 1;
+    height: 1em;
 }
 
 .main-container {
-    display: flex;
     flex-direction: column;
-    align-items: center;       
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 5;
 }
 
 .footer-container {
-    display: flex;
     flex-direction: column;
     height: 809px;
+    flex-grow: 1;
 }
 
 /* HEADER CONTENT */
 .uni-design {
+    flex-basis: 40%;
     font-size: 48px;
-    flex-grow: 1;
     color: #0E0578;
+    padding-left: 40px;
 }
 
 .navigation {
     display: flex;
-    flex-grow: 1;    
+    flex-basis: 60%;
+    justify-content: space-around;
+    border-style: dashed;  
 }
 
 .navigation ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+    border-style: dotted;
 }
 
 .nav-item {
@@ -71,28 +85,34 @@ src: url("../fonts/jost/static/Jost-Bold.ttf");
 }
 
 .about-me-container {
-    display: flex;
     justify-content: space-around;
     height: 910px;
 }
 
 .my-projects-container {
-    display: flex;
     flex-direction: column;
     height: 910px;    
     justify-content: center;  
 }
 
 .contact-me-container {
-    display: flex;
     flex-direction: column;
     height: 1316px;    
 }
 
 .welcome-left, .about-me-left {
+    border-style: dotted;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
+}
+
+.welcome-right {
+    border-style: dotted;
+    width: 564px;
+    height: 564px;
+    flex-grow: 1;
 }
 
 .welcome-left-greetings {
@@ -120,11 +140,6 @@ src: url("../fonts/jost/static/Jost-Bold.ttf");
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.welcome-right {
-    width: 564px;
-    height: 564px;
 }
 
 .button {
