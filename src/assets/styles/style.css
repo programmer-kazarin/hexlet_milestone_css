@@ -108,7 +108,6 @@ body {
 }
 
 .welcome-left, .about-me-left {
-    border-style: dotted;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,7 +137,7 @@ body {
 }
 
 .avatar-photo {
-    background-image: url("../images/Rectangle\ 3avatar\ 2.png");
+    background-image: url("../images/Rectangle_3avatar_2.png");
     background-repeat:no-repeat;
     width: 564px;
     height: 564px;
@@ -147,7 +146,7 @@ body {
 
 .simple-text {
     font-size: 24px;
-    list-style: 36px;
+    line-height: 36px;
 }
 
 .container-header {
@@ -182,8 +181,8 @@ body {
 
 .my-project-button {
     color: #2000E7;
-    background: linear-gradient(#2000E7 4%);
-    border: 2px solid #2000E7;
+    background: linear-gradient(0deg, rgba(32, 0, 231, 0.04), rgba(32, 0, 231, 0.04));
+    border: 2px solid #2000E7;    
 }
 
 .image-about-me {
@@ -197,10 +196,6 @@ body {
     align-items: center;
     flex-grow: 0;
 }
-
-/* .my-projects-header, .my-projects-text {
-
-} */
  
 .my-projects-gallery {
     display: flex;
@@ -223,21 +218,18 @@ body {
     width: 246px;
     height: 180px;
     border-radius: 2%;
-    border-style: ridge;
 }
 
 .contact-me-top {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-style: groove;
 }
 
 .contact-me-bottom {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    border-style: groove;
 }
 
 .contact-me-form {
@@ -247,7 +239,6 @@ body {
     align-items: center;
     height: 100%;
     padding-left: var(--left-padding);
-    border-style: dashed;
 }
 
 .form-item {
