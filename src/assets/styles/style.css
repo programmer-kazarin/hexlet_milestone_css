@@ -13,12 +13,20 @@ font-family: "Jost-Bold";
 src: url("../fonts/jost/static/Jost-Bold.ttf");
 }
 
+:root {
+    --left-padding: 40px;
+    --header-font-size: 48px;
+    --header-line-height: 72px;
+    --item-font-size: 31px;
+    --blue-color: #0E0578;
+    --item-line-height: 44.8px;
+  }
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 1440px;;
-    /*width: 1440px;*/
+    min-width: 1440px;
     height: 5792px;
     margin: 0;
 }
@@ -26,7 +34,6 @@ body {
 .super-container {
     display: flex;
     width: 100%;
-    border-style: groove;
 }
 
 .header-container {    
@@ -53,23 +60,21 @@ body {
 /* HEADER CONTENT */
 .uni-design {
     flex-basis: 40%;
-    font-size: 48px;
-    color: #0E0578;
-    padding-left: 40px;
+    font-size: var(--header-font-size);
+    color: var(--blue-color);
+    padding-left: var(--left-padding);
 }
 
 .navigation {
     display: flex;
     flex-basis: 60%;
     justify-content: space-around;
-    border-style: dashed;  
 }
 
 .navigation ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    border-style: dotted;
 }
 
 .nav-item {
@@ -91,13 +96,15 @@ body {
 
 .my-projects-container {
     flex-direction: column;
-    height: 910px;    
-    justify-content: center;  
+    height: 910px;
+    justify-content: flex-start;
+    background: #FFD69633;
 }
 
 .contact-me-container {
     flex-direction: column;
-    height: 1316px;    
+    height: 1316px;
+    background: #43BAFD0F;
 }
 
 .welcome-left, .about-me-left {
@@ -106,18 +113,36 @@ body {
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
+    padding-left: var(--left-padding);
+}
+
+.welcome-left-item {
+    align-self: self-start;
+    width: 100%;
+}
+
+.welcome-left-greetings {    
+    color: #2000E7;
+    font-size: 30px;
+}
+
+.welcome-left-hi span {
+    color: #F2BD00;
+    font-size: var(--header-font-size);
 }
 
 .welcome-right {
-    border-style: dotted;
-    width: 564px;
-    height: 564px;
+    display: flex;  
+    justify-content: center;
     flex-grow: 1;
 }
 
-.welcome-left-greetings {
-    color: #2000E7;
-    font-size: 30px;
+.avatar-photo {
+    background-image: url("../images/Rectangle\ 3avatar\ 2.png");
+    background-repeat:no-repeat;
+    width: 564px;
+    height: 564px;
+    box-shadow: 36px -32px 0px 0px #8775F980;
 }
 
 .simple-text {
@@ -127,30 +152,31 @@ body {
 
 .container-header {
     color: #2000E7;
-    font-size: 48px;
-    line-height: 72px;
-}
-
-.welcome-left-hi span {
-    color: #F2BD00;
-    font-size: 48px;
+    font-size: var(--header-font-size);
+    line-height: var(--header-line-height);
 }
 
 .welcome-left-buttons, .hire-me-left-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: auto;
+}
+
+.hire-me-left-buttons {
+    padding-left: var(--left-padding);
 }
 
 .button {
     box-shadow: 11px 21px 15px 6px #00000040;
     width: 246px;
-    height: 72px;
+    height: var(--header-line-height);
     border-radius: 10px;
     font-size: 24px;
+    flex-basis: 200px;
 }
 
-.hire-me-button {
+.hire-me-button {    
     background-color: #2000E7;
 }
 
@@ -164,13 +190,25 @@ body {
     width: 925px;
     height: 925px;
 }
+
+.my-projects-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 0;
+}
+
+/* .my-projects-header, .my-projects-text {
+
+} */
  
 .my-projects-gallery {
     display: flex;
     flex-direction: column;    
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;    
+    width: 100%;
+    flex-grow: 1;
 }
 
 .my-projects-gallery-row {
@@ -178,7 +216,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: nowrap;
-    
 }
 
 .my-projects-gallery-item {
@@ -186,19 +223,35 @@ body {
     width: 246px;
     height: 180px;
     border-radius: 2%;
+    border-style: ridge;
+}
+
+.contact-me-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
 }
 
 .contact-me-bottom {
     display: flex;
+    justify-content: space-around;
     flex-wrap: nowrap;
+    border-style: groove;
 }
 
 .contact-me-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    padding-left: var(--left-padding);
+    border-style: dashed;
+}
+
+.form-item {
+    box-shadow: 13px 21px 4px 0px #00000040;
 }
 
 .contact-me-form input {
@@ -235,9 +288,9 @@ body {
 
 .email-header-item {
     font-family: "Poppins Regular", sans-serif;
-    font-size: 48px;
-    line-height: 72px;
-    color: #0E0578;
+    font-size: var(--header-font-size);
+    line-height: var(--header-line-height);
+    color: var(--blue-color);
 }
 
 .email-input-container {
@@ -250,8 +303,8 @@ body {
 
 .email-input-item {
     font-family: "Jost", sans-serif;
-    font-size: 31px;
-    line-height: 44.8px;
+    font-size: var(--input-font-size);
+    line-height: var(--item-line-height);
     color: #FFFFFF;
     border-radius: 30px;
 }
@@ -267,14 +320,14 @@ body {
 
 .column-header-item {
     font-family: "Jost-Bold", sans-serif;
-    font-size: 31px;
-    line-height: 44.8px;
+    font-size: var(--input-font-size);
+    line-height: var(--item-line-height);
 }
 
 .column-link-item {
     font-family: "Jost", sans-serif;
-    font-size: 31px;
-    line-height: 44.8px;
+    font-size: var(--input-font-size);
+    line-height: var(--item-line-height);
 }
 
 hr {

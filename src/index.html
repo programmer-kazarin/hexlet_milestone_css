@@ -12,35 +12,32 @@
         </div>
         <nav class="navigation">
             <ul>
-                <li class="nav-item"><a href="#">About Me</a></li>
-                <li class="nav-item"><a href="#">Projects</a></li>
-                <li class="nav-item"><a href="#/">Contacts</a></li>
-                <li class="nav-item"><a href="#">Hire Me</a></li>
+                <li class="nav-item"><a href="#about_me">About Me</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#contacts">Contacts</a></li>
+                <li class="nav-item"><a href="#hire_me">Hire Me</a></li>
             </ul>
         </nav>
     </header>
     <main class="main-container super-container">
-        <section class="welcome-container super-container">
+        <section id="hire_me" class="welcome-container super-container">
             <div class="welcome-left">
-                <div class="welcome-left-greetings">Welcome To My PortFolio</div>
-                <div class="welcome-left-hi container-header">Hi , I am Steven</div>
-                <div class="welcome-left-hi container-header">UI/UX <span>Designer</span></div>
-                <div class="simple-text">
+                <div class="welcome-left-item welcome-left-greetings">Welcome To My PortFolio</div>
+                <div class="welcome-left-item welcome-left-hi container-header">Hi , I am Steven<br>UI/UX <span>Designer</span></div>
+                <div class="welcome-left-item simple-text">
                     Lorem Ipsum dolar sit amet, consectetur adipicsing<br>elit. Locus odio et, 
                     plateo erat est sed turpis hoc<br>equit
                 </div>
-                <div class="welcome-left-buttons">
+                <div class="welcome-left-item welcome-left-buttons">
                     <button class="hire-me-button button">Hire me</button>
                     <button class="my-project-button button">My Project</button>
                 </div>
             </div>
             <div class="welcome-right">
-                <div class="avatar-photo">
-                    <img src="./assets/images/Rectangle 3avatar.png" alt="avatar-photo">
-                </div>
+                <div class="avatar-photo"></div>
             </div>
         </section>
-        <section class="about-me-container super-container">
+        <section id="about_me" class="about-me-container super-container">
             <div class="about-me-left">
                 <div class="about-me-header container-header">About Me</div>
                 <div class="simple-text">
@@ -57,7 +54,7 @@
                 </div>
             </div>
         </section>
-        <section class="my-projects-container super-container">
+        <section id="projects" class="my-projects-container super-container">
             <div class="my-projects-top">
                 <div class="my-projects-header container-header">My Projects</div>
                 <div class="my-projects-text simple-text">Lorem Ipsum is simply dummy text of the printing</div>
@@ -80,17 +77,17 @@
                 </div>                
             </div>
         </section>
-        <section class="contact-me-container super-container">
-            <div class="contact-me top">
+        <section id="contacts" class="contact-me-container super-container">
+            <div class="contact-me-top">
                 <div class="contact-me-header container-header">Contact Me</div>
                 <div class="contact-me-text simple-text">Lorem Ipsum is simply dummy text of the printing</div>
             </div>
             <div class="contact-me-bottom">
                 <form class="contact-me-form" action="/do-nothing">
-                    <input id="email" type="email" placeholder="Email">
-                    <input id="password" type="password" placeholder="Password">
-                    <input id="message" type="text" placeholder="Message...">
-                    <button>Contact</button>
+                    <input class="form-item" id="email" type="email" placeholder="Email">
+                    <input class="form-item" id="password" type="password" placeholder="Password">
+                    <input class="form-item" id="message" type="text" placeholder="Message...">
+                    <button class="form-item">Contact</button>
                 </form>
                 <img class="contact-me-image" src="./assets/images/Saly-13.svg" alt="A person with notebook">
             </div>
